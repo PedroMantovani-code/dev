@@ -1,15 +1,108 @@
-# What is this?
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoDev Blog - Cyberpunk Hub</title>
+    <style>
+        /* Estilos Globais e Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
+            color: #00ffcc; /* Verde Neon */
+            background-color: #0d0e15; /* Roxo Escuro / Preto Espacial */
+        }
+        a {
+            color: #ff007f; /* Rosa Neon */
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            color: #00ffcc;
+            text-shadow: 0 0 8px #00ffcc;
+        }
 
-The github.dev web-based editor is a lightweight editing experience that runs entirely in your browser. You can navigate files and source code repositories from GitHub, and make and commit code changes.
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(180deg, #1a0826 0%, #0d0e15 100%);
+            border-bottom: 3px solid #ff007f;
+            color: #fff;
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(255, 0, 127, 0.2);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+            text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #00ffcc;
+            text-shadow: 0 0 5px rgba(0, 255, 204, 0.5);
+        }
 
-There are two ways to go directly to a VS Code environment in your browser and start coding:
+        /* Layout Principal */
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 2rem;
+        }
 
-* Press the . key on any repository or pull request.
-* Swap `.com` with `.dev` in the URL. For example, this repo https://github.com/github/dev becomes http://github.dev/github/dev
-
-Preview the gif below to get a quick demo of github.dev in action.
-
-![github dev](https://user-images.githubusercontent.com/856858/130119109-4769f2d7-9027-4bc4-a38c-10f297499e8f.gif)
-
-# Why?
-It’s a quick way to edit and navigate code. It's especially useful if you want to edit multiple files at a time or take advantage of all the powerful code editing features of Visual Studio Code when making a quick change. For more information, see our [documentation](https://github.co/codespaces-editor-help).
+        /* Lista de Postagens */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        article {
+            background: #161925;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #3d1e6d;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            transition: transform 0.2s ease;
+        }
+        article:hover {
+            transform: translateY(-3px);
+            border-color: #ff007f;
+            box-shadow: 0 0 15px rgba(255, 0, 127, 0.3);
+        }
+        article h2 {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+        article h2 a {
+            color: #fff;
+        }
+        article h2 a:hover {
+            color: #ff007f;
+            text-shadow: 0 0 5px #ff007f;
+        }
+        article .meta {
+            font-size: 0.85rem;
+            color: #7a889b;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        article p {
+            margin-bottom: 1.5rem;
+            color: #b3c5d7;
+        }
+        .read-more {
+            font-weight: bold;
+            border: 1px solid #ff007f;
+            padding: 0.5rem 1rem
